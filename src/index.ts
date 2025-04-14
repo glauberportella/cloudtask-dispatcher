@@ -2,7 +2,7 @@ import { CloudTasksClient } from '@google-cloud/tasks';
 import { google } from '@google-cloud/tasks/build/protos/protos';
 import { CloudTaskOptions } from './types';
 
-export class CloudTaskDispatcher {
+class CloudTaskDispatcher {
     private client: CloudTasksClient;
 
     constructor() {
@@ -58,3 +58,6 @@ export class CloudTaskDispatcher {
         return response;
     }
 }
+
+export { CloudTaskDispatcher }; // Para ES Modules
+module.exports = { CloudTaskDispatcher }; // Para CommonJS
