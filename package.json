@@ -1,6 +1,6 @@
 {
     "name": "cloudtask-dispatcher",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Cloud task dispatcher library",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
