@@ -1,12 +1,11 @@
 {
     "extends": "./tsconfig.json",
     "compilerOptions": {
-        "module": "ESNext",
-        "moduleResolution": "Node",
         "outDir": "./dist/esm",
-        "target": "ES2020",
+        "module": "ESNext",
+        "target": "ES6",
         "declaration": true,
-        "declarationDir": "./dist/esm/types"
+        "declarationDir": "./dist/types"
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"]
